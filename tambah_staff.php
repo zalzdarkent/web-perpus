@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $query = "INSERT INTO staff (nama, telp, email) VALUES ('$nama_staff', '$telp', '$email')";
     if (mysqli_query($koneksi, $query)) {
-        echo "<script>alert('Data berhasil disimpan'); window.location='staff.php';</script>";
+        echo "<script>alert('Data sukses disimpan'); window.location='staff.php';</script>";
     } else {
         echo "Error: " . mysqli_error($koneksi);
     }
